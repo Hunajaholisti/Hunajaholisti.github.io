@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunajaholistin Hunaja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header-tarinamme">
+
+    <nav>
+        <a href="index.html"><img src="HHlogo.jpg" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="tarinamme.html">TARINAMME</a></li>
+                <li><a href="tuotteemme.html">TUOTTEEMME</a></li>
+                <li><a href="verkkokauppa.html">VERKKOKAUPPA</a></li>
+                <li><a href="#nav-yhteystiedot">YHTEYSTIEDOT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<!------ Tarinamme ------>
+
+<section class="tarinamme">
+    <h1>TARINAMME</h1>
+    <br>
+    <img src="HHkuva1.jpg" width="100%" id="tarinamme-kuva" alt="">
+        <div class="tarinamme-info">
+            <br><h3>HEIDI KÄÄRIÄINEN</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero amet natus maxime consequatur accusantium voluptates voluptatibus quae reiciendis corporis fugit? Ad temporibus aut nobis. Ducimus doloribus alias illo ipsam suscipit commodi excepturi ratione, accusantium debitis officiis sequi atque! Sunt, beatae, suscipit dolores soluta recusandae explicabo natus quia, fugit sapiente mollitia debitis ab fugiat odit quam nesciunt qui molestiae quo labore. Libero aliquam expedita nobis a delectus recusandae, at accusantium molestiae amet eveniet corrupti quidem, ullam distinctio quaerat consequatur nihil vitae magni sunt corporis provident. Hic possimus aliquid accusantium. Illum eveniet rerum aliquam consequuntur ipsa aliquid provident amet, consectetur excepturi neque sint maxime adipisci nobis! Reprehenderit dolorum sequi placeat. Incidunt mollitia voluptates voluptate inventore obcaecati, quo placeat provident deserunt consequatur doloremque voluptatum delectus explicabo nesciunt eos libero eaque accusantium eveniet ipsum repellat dicta, quasi facilis ipsam assumenda. Sed nesciunt sint aut numquam quidem, atque ad odio incidunt fuga, hic sequi adipisci.</p>
+        </div>
+    
+</section>
+
+<!------ Footer ------>
+
+<a name="nav-yhteystiedot"></a>
+
+<section class="footer">
+    <h3>YHTEYSTIEDOT</h3>
+
+    <div class="footer-image"></div>
+        <a href="" class="footer-hero-btn">KATSO TÄSTÄ VALIKOIMAMME</a>
+        <p id="e-mail-p">E-mail: hunajaholisti@gmail.com</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/nikohoffrenmusic" target=_blank><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com/HoffrenMusic" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nikohoffrenmusic" target=_blank><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <p>Copyright Niko Hoffrén @2021</p>
+</section>
+
+
+
+<!------Javascript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

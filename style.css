@@ -71,20 +71,20 @@ nav img {
     flex: 1;
     text-align: right;
 }
-.nav-links ul li {
+.nav-links li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links ul li a {
+.nav-links a {
     color: var(--clr-neutral-100);
     text-decoration: none;
     font-size: 1.3rem;
 }
 
-.nav-links ul li ::after {
+.nav-links li ::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -94,7 +94,7 @@ nav img {
     transition: 0.5s;
 }
 
-.nav-links ul li :hover::after {
+.nav-links li :hover::after {
     width: 100%;
 }
 
@@ -176,23 +176,24 @@ nav .fa{
 
 .kuvia {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
-
-.kuvia-list {
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+.kuvia > * {
+    flex: 1 1 33%;
+}
+.kuvia p {
+    font-weight: 700;
 }
 
 #kuvia-kuvat {
-    width: 90%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 @media(max-width:700px) {
@@ -370,6 +371,19 @@ nav .fa{
     font-weight: 600;
 }
 
+.footer-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.footer-text {
+    flex: 1 1 33%;
+    text-align: center;
+    padding: 10px;
+}
+
 .footer-hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -381,7 +395,7 @@ nav .fa{
     background: transparent;
     position: relative;
     cursor: pointer;
-    bottom: 120px;
+    top: 90px;
 }
 .footer-hero-btn:hover {
     border: 1px solid var(--clr-primary-400);
@@ -391,7 +405,7 @@ nav .fa{
 
 #e-mail-p{
     position: relative;
-    bottom: 270px;
+    bottom: 50px;
     font-family: var(--ff-accent);
     font-size: var(--fz-primary-200);
     color:var(--clr-neutral-100);

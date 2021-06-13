@@ -8,17 +8,22 @@
 
     --ff-primary: 'Barlow Semi Condensed', sans-serif;
     --ff-accent: 'Amatic SC', sans-serif;
+
+    --fz-primary-200: 1.2rem;
+    --fz-primary-400: 1.6rem;
+    --fz-accent-600: 2.6rem;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--ff-primary);
 }
 
 html {
     background-color: var(--clr-primary-200);
+    font-family: var(--ff-primary);
+    font-size: var(--fz-primary-200);
     scroll-behavior: smooth;
 }
 
@@ -26,11 +31,17 @@ html {
     font-family: var(--ff-accent);
 }
 
-h1,
+h1 {
+    font-family: var(--ff-accent);
+    font-size: var(--fz-accent-600);
+}
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: var(--ff-accent);
+    font-size: var(--fz-primary-400);
 }
 
 .header {
@@ -53,7 +64,7 @@ nav {
 }
 
 nav img {
-    width: 90px;
+    width: 80px;
 }
 
 .nav-links {
@@ -70,7 +81,7 @@ nav img {
 .nav-links ul li a {
     color: var(--clr-neutral-100);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .nav-links ul li ::after {
@@ -103,7 +114,6 @@ nav img {
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 1.6rem;
     color: var(--clr-neutral-100);
 }
 
@@ -114,7 +124,7 @@ nav img {
     border: 1px solid white;
     padding: 12px 34px;
     font-family: var(--ff-accent);
-    font-size: 22px;
+    font-size: 1.1rem;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -168,22 +178,16 @@ nav .fa{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
     padding-bottom: 40px;
 }
 
 .kuvia-list {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: center;
-}
-
-.kuvia p {
-    font-size: 1.3rem;
 }
 
 #kuvia-kuvat {
@@ -208,7 +212,6 @@ nav .fa{
 
 .header-tuotteemme {
     min-height: max-content;
-    width: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -217,31 +220,17 @@ nav .fa{
 .tuotteemme {
     width: 80%;
     margin: auto;
-    text-align: center;
-    padding-top: 140px;
-}
-
-.tuotteemme h1 {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
-}
-
-.tuotteemme h3 {
-    text-align: center;
 }
 
 .tuotteemme-info {
-    flex-basis: 30%;
     border-radius: 10px;
-    margin-bottom: 5%;
     text-align: left;
-    font-size: 1.2rem;
 }
 #tuotteemme-kuva {
-    width: 40%;
+    width: 10%;
     border-radius: 30px;
-    float:left;
-    padding: 10px;
+    float: left;
+    margin: 0 1.5em .5em 0;
 }
 
 .tuotteemme-list {
@@ -273,10 +262,6 @@ nav .fa{
     padding-top: 140px;
 }
 
-.tarinamme h1 {
-    font-size: 2.6rem;
-}
-
 .tarinamme h3 {
     text-align: center;
 }
@@ -286,7 +271,6 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    font-size: 1.2rem;
 }
 #tarinamme-kuva {
     width: 40%;
@@ -319,7 +303,6 @@ nav .fa{
 }
 
 .tuotteemme h1 {
-    font-size: 2.6rem;
     margin-bottom: 10px;
 }
 
@@ -332,7 +315,6 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    font-size: 1.2rem;
 }
 #tuotteemme-kuva {
     width: 40%;
@@ -366,7 +348,7 @@ nav .fa{
     padding: 150px 0;
 }
 .footer-image h1 {
-    color: whitesmoke;
+    color: var(--clr-neutral-100);
     margin-bottom: 40px;
     padding: 0;
 }
@@ -383,13 +365,9 @@ nav .fa{
     background-color: var(--clr-primary-400);
 }
 .footer h3 {
-    font-size: 2.6rem;
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
-}
-.footer p {
-    font-size: 1.3rem;
 }
 
 .footer-hero-btn {
@@ -399,7 +377,7 @@ nav .fa{
     border: 1px solid white;
     padding: 12px 34px;
     font-family: var(--ff-accent);
-    font-size: 22px;
+    font-size: 1.1rem;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -414,7 +392,8 @@ nav .fa{
 #e-mail-p{
     position: relative;
     bottom: 270px;
-    font-size: 1.7rem;
+    font-family: var(--ff-accent);
+    font-size: var(--fz-primary-200);
     color:var(--clr-neutral-100);
 }
 

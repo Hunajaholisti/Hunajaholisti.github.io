@@ -1,17 +1,32 @@
 :root {
-    --clr-primary-200: hsl(51, 100%, 87%);
-    --clr-primary-300: hsl(51, 100%, 77%);
-    --clr-primary-400: hsl(51, 100%, 67%);
+    --gradient-100: linear-gradient(
+        45deg,
+        rgb(253, 253, 221),
+        rgb(253, 253, 190),
+        rgb(253, 253, 150),
+        rgb(253, 253, 221)
+    );
+    --gradient-300: linear-gradient(
+        15deg,
+        rgb(238, 208, 75),
+        rgb(248, 247, 168),
+        rgb(245, 245, 181),
+        rgb(230, 230, 74)
+    );
+
+    --clr-primary-200: hsl(46, 48%, 76%);
+    --clr-primary-300: hsl(56, 54%, 63%);
+    --clr-primary-400: hsl(61, 100%, 70%);
 
     --clr-neutral-100: rgb(255, 253, 242);
-    --clr-neutral-900: rgb(34, 34, 34);
+    --clr-neutral-900: rgb(46, 46, 46);
 
-    --ff-primary: 'Barlow Semi Condensed', sans-serif;
+    --ff-primary: 'Arial', sans-serif;
     --ff-accent: 'Amatic SC', sans-serif;
 
-    --fz-primary-200: 1.2rem;
-    --fz-primary-400: 1.6rem;
-    --fz-accent-600: 2.6rem;
+    --fz-primary-200: 1.1rem;
+    --fz-primary-400: 1.5rem;
+    --fz-accent-600: 2.5rem;
 }
 
 *{
@@ -20,10 +35,16 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: var(--clr-primary-400);
+    color: var(--clr-neutral-900);
+}
+
 html {
-    background-color: var(--clr-primary-200);
+    background: var(--gradient-100);
     font-family: var(--ff-primary);
     font-size: var(--fz-primary-200);
+    line-height: 1.4;
     scroll-behavior: smooth;
 }
 
@@ -42,6 +63,18 @@ h5,
 h6 {
     font-family: var(--ff-accent);
     font-size: var(--fz-primary-400);
+    line-height: 1;
+}
+h4 {
+    font-size: 1.3rem;
+    font-weight: 1;
+    color:var(--clr-neutral-100);
+}
+p {
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-900);
+    font-size: 1.2rem;
+    font-weight: 2;
 }
 
 .header {
@@ -60,7 +93,7 @@ nav {
     align-items: center;
     width: 100%;
     position:fixed;
-    background-color: rgba(77, 75, 11, 0.6)
+    background-color: rgba(65, 63, 28, 0.5);
 }
 
 nav img {
@@ -183,9 +216,17 @@ nav .fa{
     text-align: center;
     padding-bottom: 80px;
 }
+
+.kuvia-list {
+    width: 10%;
+    border-radius: 70px;
+    border-color: coral;
+    margin: 0 1.5em .5em 0;
+}
 .kuvia > * {
     flex: 1 1 33%;
 }
+
 .kuvia p {
     font-weight: 700;
 }
@@ -363,7 +404,7 @@ nav .fa{
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: var(--clr-primary-400);
+    background: var(--gradient-300);
 }
 .footer h3 {
     margin-bottom: 25px;
@@ -407,7 +448,7 @@ nav .fa{
     position: relative;
     bottom: 50px;
     font-family: var(--ff-accent);
-    font-size: var(--fz-primary-200);
+    font-size: 1.5rem;
     color:var(--clr-neutral-100);
 }
 

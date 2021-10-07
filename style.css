@@ -207,6 +207,16 @@ nav .fa{
 
 /*------Kuvia------*/
 
+.upotukset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
 .kuvia {
     display: flex;
     flex-wrap: wrap;
@@ -217,12 +227,28 @@ nav .fa{
     padding-bottom: 80px;
 }
 
+.upotukset-list {
+    width: 10%;
+    border-radius: 70px;
+    border-color: coral;
+    margin: 0 1.5em .5em 0;
+}
+
 .kuvia-list {
     width: 10%;
     border-radius: 70px;
     border-color: coral;
     margin: 0 1.5em .5em 0;
 }
+
+.upotukset > * {
+    flex: 1 1 33%;
+}
+
+.upotukset p {
+    font-weight: 700;
+}
+
 .kuvia > * {
     flex: 1 1 33%;
 }
@@ -238,15 +264,24 @@ nav .fa{
 }
 
 @media(max-width:700px) {
-    .kuvia {
-        width: 90%;
+    .upotukset {
+        width: 100%;
         padding: 0;
-        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .upotukset-list {
+        padding-top: 10px;
+        flex: 100%;
+    }
+    .kuvia {
+        width: 100%;
+        padding: 0;
         padding-bottom: 30px;
     }
     .kuvia-list {
         padding-top: 10px;
         padding-bottom: 10px;
+        flex: 100%;
     }
 }
 

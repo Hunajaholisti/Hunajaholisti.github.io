@@ -15,7 +15,7 @@
     );
 
     --clr-primary-200: hsl(46, 48%, 76%);
-    --clr-primary-300: hsl(56, 54%, 63%);
+    --clr-primary-300: hsl(56, 100%, 79%);
     --clr-primary-400: hsl(61, 100%, 70%);
 
     --clr-neutral-100: rgb(255, 253, 242);
@@ -214,7 +214,7 @@ nav .fa{
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 .kuvia {
@@ -228,17 +228,18 @@ nav .fa{
 }
 
 .upotukset-list {
-    width: 10%;
-    border-radius: 70px;
-    border-color: coral;
+    width: 100%;
+    border-radius: 5px;
+    border-color: rgb(0, 0, 0);
     margin: 0 1.5em .5em 0;
 }
 
 .kuvia-list {
-    width: 10%;
+    width: 100%;
     border-radius: 70px;
     border-color: coral;
     margin: 0 1.5em .5em 0;
+    padding-left: 30px;
 }
 
 .upotukset > * {
@@ -266,22 +267,27 @@ nav .fa{
 @media(max-width:700px) {
     .upotukset {
         width: 100%;
-        padding: 0;
-        padding-bottom: 30px;
+        margin: auto;
+        align-items: center;
+        padding-bottom: 5px;
     }
     .upotukset-list {
         padding-top: 10px;
         flex: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
     }
     .kuvia {
         width: 100%;
         padding: 0;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
     }
     .kuvia-list {
         padding-top: 10px;
         padding-bottom: 10px;
         flex: 100%;
+        padding-left: 30px;
     }
 }
 
@@ -396,7 +402,7 @@ nav .fa{
 #tuotteemme-kuva {
     width: 40%;
     border-radius: 30px;
-    float:left;
+    float: left;
     padding: 10px;
 }
 

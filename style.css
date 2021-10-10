@@ -11,12 +11,12 @@
         rgb(238, 208, 75),
         rgb(248, 247, 168),
         rgb(245, 245, 181),
-        rgb(230, 230, 74)
+        rgb(224, 224, 79)
     );
 
     --clr-primary-200: hsl(46, 48%, 76%);
     --clr-primary-300: hsl(56, 100%, 79%);
-    --clr-primary-400: hsl(61, 100%, 70%);
+    --clr-primary-400: hsl(66, 100%, 70%);
 
     --clr-neutral-100: rgb(255, 253, 242);
     --clr-neutral-900: rgb(46, 46, 46);
@@ -260,8 +260,8 @@ nav .fa{
 
 #kuvia-kuvat {
     width: 100%;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 5px;
 }
 
 @media(max-width:700px) {

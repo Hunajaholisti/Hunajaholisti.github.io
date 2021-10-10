@@ -21,7 +21,7 @@
     --clr-neutral-100: rgb(255, 253, 242);
     --clr-neutral-900: rgb(46, 46, 46);
 
-    --ff-primary: 'Arial', sans-serif;
+    --ff-primary: 'Libre Baskerville', serif;
     --ff-accent: 'Amatic SC', sans-serif;
 
     --fz-primary-200: 1.1rem;
@@ -387,6 +387,11 @@ nav .fa{
 
 .tuotteemme h1 {
     margin-bottom: 10px;
+}
+
+.tuotteemme p {
+    font-family: var(--ff-primary);
+    font-size: 0.9rem;
 }
 
 .tuotteemme h3 {

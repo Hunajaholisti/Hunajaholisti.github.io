@@ -347,6 +347,13 @@ nav .fa{
 
 .tarinamme h3 {
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: 1000;
+}
+
+.tarinamme p {
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
 }
 
 .tarinamme-info {
@@ -391,11 +398,13 @@ nav .fa{
 
 .tuotteemme p {
     font-family: var(--ff-primary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .tuotteemme h3 {
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: 1000;
 }
 
 .tuotteemme-info {

@@ -3,8 +3,8 @@
         45deg,
         rgb(253, 253, 221),
         rgb(253, 253, 190),
-        rgb(253, 253, 150),
-        rgb(253, 253, 221)
+        rgb(231, 253, 150),
+        rgb(255, 248, 143)
     );
     --gradient-300: linear-gradient(
         15deg,
@@ -14,17 +14,17 @@
         rgb(224, 224, 79)
     );
 
-    --clr-primary-200: hsl(46, 48%, 76%);
-    --clr-primary-300: hsl(56, 100%, 79%);
-    --clr-primary-400: hsl(66, 100%, 70%);
+    --clr-primary-200: hsl(54, 48%, 76%);
+    --clr-primary-300: hsl(49, 100%, 79%);
+    --clr-primary-400: hsl(49, 100%, 70%);
 
     --clr-neutral-100: rgb(255, 253, 242);
     --clr-neutral-900: rgb(46, 46, 46);
 
-    --ff-primary: 'Libre Baskerville', serif;
+    --ff-primary: 'Arial', serif;
     --ff-accent: 'Amatic SC', sans-serif;
 
-    --fz-primary-200: 1.1rem;
+    --fz-primary-200: 1.2rem;
     --fz-primary-400: 1.5rem;
     --fz-accent-600: 2.5rem;
 }
@@ -236,10 +236,12 @@ nav .fa{
 
 .kuvia-list {
     width: 100%;
-    border-radius: 70px;
-    border-color: coral;
-    margin: 0 1.5em .5em 0;
-    padding-left: 30px;
+    border-radius:10px;
+    
+    
+    margin: 2 1.5em .5em 7;
+    padding-left: 0px;
+    background-color: var(--clr-primary-300);
 }
 
 .upotukset > * {
@@ -343,6 +345,9 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 140px;
+    border-radius: 10px;
+    background-color: var(--clr-primary-300);
+    
 }
 
 .tarinamme h3 {
@@ -361,10 +366,11 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+
 }
 #tarinamme-kuva {
     width: 40%;
-    border-radius: 10px;
+    border-radius: 40px;
     float:left;
     padding: 20px;
 }

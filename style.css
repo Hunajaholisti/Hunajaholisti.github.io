@@ -1,10 +1,10 @@
 :root {
     --gradient-100: linear-gradient(
         45deg,
-        rgb(253, 253, 221),
-        rgb(253, 253, 190),
-        rgb(231, 253, 150),
-        rgb(255, 248, 143)
+        rgb(242, 243, 189),
+        rgb(255, 245, 154),
+        rgb(248, 246, 130),
+        rgb(240, 218, 95)
     );
     --gradient-300: linear-gradient(
         15deg,
@@ -268,7 +268,7 @@ nav .fa{
 
 @media(max-width:700px) {
     .upotukset {
-        width: 100%;
+        width: 80%;
         margin: auto;
         align-items: center;
         padding-bottom: 1px;

@@ -271,7 +271,7 @@ nav .fa{
         width: 100%;
         margin: auto;
         align-items: center;
-        padding-bottom: 5px;
+        padding-bottom: 1px;
     }
     .upotukset-list {
         padding-top: 10px;
@@ -289,7 +289,7 @@ nav .fa{
         padding-top: 10px;
         padding-bottom: 10px;
         flex: 100%;
-        padding-left: 30px;
+        padding: 10px;
     }
 }
 
@@ -326,7 +326,10 @@ nav .fa{
 @media(max-width:700px) {
     #tuotteemme-kuva {
         width: 100%;
-        padding: 0;
+        padding: 0px;
+    }
+    .tuotteemme-info{
+        padding: 10px;
     }
 }
 
@@ -377,6 +380,9 @@ nav .fa{
 @media(max-width:700px) {
     #tarinamme-kuva {
         width: 100%;
+        padding: 10px;
+    }
+    .tarinamme-info {
         padding: 10px;
     }
 }

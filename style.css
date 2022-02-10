@@ -24,6 +24,7 @@
     --ff-primary: 'Arial', serif;
     --ff-accent: 'Amatic SC', sans-serif;
 
+    --fz-primary-100: 1.0rem;
     --fz-primary-200: 1.2rem;
     --fz-primary-400: 1.5rem;
     --fz-accent-600: 2.5rem;
@@ -139,6 +140,39 @@ nav img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.form-css {
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.form-email-address {
+    margin: 1px;
+    padding: 1px;
+    font-size: var(--fz-primary-100);
+    border-radius: 3px;
+}
+.form-text {
+    margin: 1px;
+    padding: 1px;
+    font-size: var(--fz-primary-100);
+    border-radius: 3px;
+}
+.form-message {
+    height: 150px;
+    width: 300px;
+    margin: 1px;
+    padding: 1px;
+    font-size: var(--fz-primary-100);
+    border-radius: 3px;
+}
+.form-button {
+    margin-top: 5px;
+    padding: 3px;
+    font-size: var(--fz-primary-100);
+    border-radius: 3px;
 }
 
 .text-box h1 {
@@ -483,6 +517,9 @@ nav .fa{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 30px;
 }
 
